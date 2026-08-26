@@ -61,7 +61,6 @@
         </div>
     </header>
 
-    <!-- Menu mobile -->
     <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
     <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
         <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fechar menu">
@@ -99,232 +98,131 @@
     </section>
 
     <section class="projects">
-        <div class="container">
-            <div class="projects-grid">
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev" id="btn-prev" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 21C12 21 4 15.5 4 9.8C4 6.6 6.4 4 9.5 4C11 4 12 5 12 5C12 5 13 4 14.5 4C17.6 4 20 6.6 20 9.8C20 15.5 12 21 12 21Z"
-                                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-                        </svg>
+            <div class="carousel-track" id="projects-track">
+
+                <div class="carousel-slide project-card">
+                    <div class="project-image">
+                        <img src="../Public/onu-mulheres.png" alt="ONU Mulheres Brasil">
                     </div>
                     <span class="project-tag">Direitos humanos</span>
-                    <h3>ONU Mulheres Brasil</h3>
-                    <p>Entidade das Nações Unidas dedicada à igualdade de gênero e ao empoderamento das mulheres,
-                        com programas e campanhas em todo o país.</p>
-                    <a class="project-visit" href="https://www.onumulheres.org.br/" target="_blank"
-                        rel="noopener noreferrer">
-                        Visitar site
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <a href="https://www.onumulheres.org.br/" target="_blank" rel="noopener noreferrer"
+                        class="project-title-link">
+                        <h3>ONU Mulheres Brasil</h3>
                     </a>
+                    <p>Entidade das Nações Unidas dedicada à igualdade de gênero e ao empoderamento das mulheres, com
+                        programas e campanhas em todo o país.</p>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 2L14.5 8.5L21 9.3L16.2 13.8L17.6 20.3L12 17L6.4 20.3L7.8 13.8L3 9.3L9.5 8.5L12 2Z"
-                                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-                        </svg>
+                <div class="carousel-slide project-card">
+                    <div class="project-image">
+                        <img src="../Public/instituto maria da penha.png" alt="Instituto Maria da Penha">
                     </div>
                     <span class="project-tag">Enfrentamento à violência</span>
-                    <h3>Instituto Maria da Penha</h3>
-                    <p>ONG que nasceu da história de Maria da Penha e atua com cursos, formações e acolhimento
-                        para o enfrentamento da violência doméstica e familiar.</p>
-                    <a class="project-visit" href="https://www.institutomariadapenha.org.br/" target="_blank"
-                        rel="noopener noreferrer">
-                        Visitar site
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <a href="https://www.institutomariadapenha.org.br/" target="_blank" rel="noopener noreferrer"
+                        class="project-title-link">
+                        <h3>Instituto Maria da Penha</h3>
                     </a>
+                    <p>ONG que nasceu da história de Maria da Penha e atua com cursos, formações e acolhimento para o
+                        enfrentamento da violência doméstica e familiar.</p>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 21V13C3 11.9 3.9 11 5 11H9C10.1 11 11 11.9 11 13V21" stroke="currentColor"
-                                stroke-width="1.6" stroke-linejoin="round" />
-                            <path d="M13 21V8C13 6.9 13.9 6 15 6H19C20.1 6 21 6.9 21 8V21" stroke="currentColor"
-                                stroke-width="1.6" stroke-linejoin="round" />
-                            <path d="M3 21H21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
-                        </svg>
+                <div class="carousel-slide project-card">
+                    <div class="project-image">
+                        <img src="../Public/rede mulheres.png" alt="Rede Mulher Empreendedora">
                     </div>
                     <span class="project-tag">Autonomia econômica</span>
-                    <h3>Rede Mulher Empreendedora</h3>
-                    <p>A maior rede de apoio ao empreendedorismo feminino do Brasil, com capacitação, mentorias
-                        e uma comunidade voltada à inclusão econômica de mulheres.</p>
-                    <a class="project-visit" href="https://rme.net.br/" target="_blank" rel="noopener noreferrer">
-                        Visitar site
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <a href="https://rme.net.br/" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                        <h3>Rede Mulher Empreendedora</h3>
                     </a>
+                    <p>A maior rede de apoio ao empreendedorismo feminino do Brasil, com capacitação, mentorias e uma
+                        comunidade voltada à inclusão econômica de mulheres.</p>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 3L4 7V11C4 16 7.4 20.4 12 21.5C16.6 20.4 20 16 20 11V7L12 3Z"
-                                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-                            <path d="M9.5 12L11.3 13.8L15 10" stroke="currentColor" stroke-width="1.6"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                <div class="carousel-slide project-card">
+                    <div class="project-image">
+                        <img src="../Public/themis.png" alt="Themis — Gênero, Justiça e Direitos Humanos">
                     </div>
                     <span class="project-tag">Acesso à justiça</span>
-                    <h3>Themis — Gênero, Justiça e Direitos Humanos</h3>
-                    <p>Organização feminista fundada em 1993 que forma lideranças comunitárias e amplia o acesso
-                        das mulheres à justiça e aos seus direitos.</p>
-                    <a class="project-visit" href="https://themis.org.br/" target="_blank" rel="noopener noreferrer">
-                        Visitar site
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <a href="https://themis.org.br/" target="_blank" rel="noopener noreferrer"
+                        class="project-title-link">
+                        <h3>Themis — Gênero, Justiça e Direitos Humanos</h3>
                     </a>
+                    <p>Organização feminista fundada em 1993 que forma lideranças comunitárias e amplia o acesso das
+                        mulheres à justiça e aos seus direitos.</p>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 3V21M3 12H21" stroke="currentColor" stroke-width="1.6"
-                                stroke-linecap="round" />
-                            <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6" />
-                        </svg>
+                <div class="carousel-slide project-card">
+                    <div class="project-image">
+                        <img src="../Public/rede mulher empreendedora.png" alt="Instituto Rede Mulher Empreendedora">
                     </div>
                     <span class="project-tag">Autonomia econômica</span>
-                    <h3>Instituto Rede Mulher Empreendedora</h3>
+                    <a href="https://institutorme.org.br/" target="_blank" rel="noopener noreferrer"
+                        class="project-title-link">
+                        <h3>Inst. Rede Mulher Empreendedora</h3>
+                    </a>
                     <p>Organização que desenvolve projetos de capacitação, geração de renda e empreendedorismo para
                         promover a autonomia econômica de mulheres.</p>
-                    <a class="project-visit" href="https://institutorme.org.br/" target="_blank"
-                        rel="noopener noreferrer">
-                        Visitar site
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 21C12 21 4 15.5 4 9.8C4 6.6 6.4 4 9.5 4C11 4 12 5 12 5C12 5 13 4 14.5 4C17.6 4 20 6.6 20 9.8C20 15.5 12 21 12 21Z"
-                                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-                            <path d="M8 12H16M12 8V16" stroke="currentColor" stroke-width="1.6"
-                                stroke-linecap="round" />
-                        </svg>
+                <div class="carousel-slide project-card">
+                    <div class="project-image">
+                        <img src="../Public/olga.png" alt="Lab Think Olga">
                     </div>
-                    <span class="project-tag">Autonomia e saúde das mulheres</span>
-                    <h3>Lab Think Olga</h3>
-                    <p>Laboratório que produz estudos e conteúdos sobre questões que afetam as mulheres, incluindo
-                        autonomia financeira, conhecimento, autonomia emocional, cuidado e saúde.</p>
-                    <a class="project-visit" href="https://lab.thinkolga.com/" target="_blank"
-                        rel="noopener noreferrer">
-                        Visitar site
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <span class="project-tag">Autonomia e saúde</span>
+                    <a href="https://lab.thinkolga.com/" target="_blank" rel="noopener noreferrer"
+                        class="project-title-link">
+                        <h3>Lab Think Olga</h3>
                     </a>
+                    <p>Laboratório que produz estudos e conteúdos sobre questões que afetam as mulheres, incluindo
+                        autonomia financeira, cuidado e saúde.</p>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 19L8 15L11 18L20 9" stroke="currentColor" stroke-width="1.6"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M15 9H20V14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
+                <div class="carousel-slide project-card">
+                    <div class="project-image">
+                        <img src="../Public/gov-elas empreendem.png" alt="Elas Empreendem">
                     </div>
                     <span class="project-tag">Empreendedorismo feminino</span>
-                    <h3>Elas Empreendem</h3>
+                    <a href="https://www.gov.br/memp/pt-br/acesso-a-informacao/acoes-e-programas/elas-empreendem"
+                        target="_blank" rel="noopener noreferrer" class="project-title-link">
+                        <h3>Elas Empreendem</h3>
+                    </a>
                     <p>Estratégia do Governo Federal para fortalecer o empreendedorismo feminino, com ações relacionadas
-                        a crédito, mercado, tecnologia, inovação e educação empreendedora.</p>
-                    <a class="project-visit"
-                        href="https://www.gov.br/memp/pt-br/acesso-a-informacao/acoes-e-programas/elas-empreendem"
-                        target="_blank" rel="noopener noreferrer">
-                        Visitar site
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                        a crédito, inovação e educação.</p>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 21C12 21 4 15.5 4 9.8C4 6.6 6.4 4 9.5 4C11 4 12 5 12 5C12 5 13 4 14.5 4C17.6 4 20 6.6 20 9.8C20 15.5 12 21 12 21Z"
-                                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-                            <path d="M9 10.5C10.8 12.3 13.2 12.3 15 10.5" stroke="currentColor" stroke-width="1.6"
-                                stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <span class="project-tag">Acolhimento e autonomia</span>
-                    <h3>Instituto Mulher Empreende</h3>
-                    <p>Rede que busca fortalecer o protagonismo feminino por meio de desenvolvimento pessoal, autonomia
-                        econômica, acolhimento emocional e redes de apoio.</p>
-                    <a class="project-visit" href="https://www.institutomulherempreende.org/" target="_blank"
-                        rel="noopener noreferrer">
-                        Visitar site
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8 3.5c.4 1.2.9 2.3 1.6 3.3c.3.5.2 1-.2 1.4L8 9.6c1 2.4 3 4.4 5.4 5.4l1.4-1.4c.4-.4.9-.5 1.4-.2c1 .7 2.1 1.2 3.3 1.6c.7.2 1.1.9 1 1.6l-.3 2.1c-.1.7-.7 1.3-1.5 1.2C11.4 19.4 4.6 12.6 4.2 4.7c0-.7.5-1.3 1.2-1.5l2.1-.3c.7-.1 1.3.3 1.5 1Z"
-                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                        </svg>
+                <div class="carousel-slide project-card">
+                    <div class="project-image">
+                        <img src="../Public/gov-central de atendimento.png" alt="Central de Atendimento à Mulher">
                     </div>
                     <span class="project-tag">Serviço público · 24h</span>
-                    <h3>Central de Atendimento à Mulher — Ligue 180</h3>
-                    <p>Serviço gratuito do Governo Federal que orienta, acolhe e encaminha denúncias de violência
-                        contra a mulher, por telefone, WhatsApp ou e-mail, todos os dias da semana.</p>
-                    <a class="project-visit" href="https://www.gov.br/mulheres/pt-br/ligue180" target="_blank"
-                        rel="noopener noreferrer">
-                        Visitar site
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <a href="https://www.gov.br/mulheres/pt-br/ligue180" target="_blank" rel="noopener noreferrer"
+                        class="project-title-link">
+                        <h3>Ligue 180 (Central)</h3>
                     </a>
+                    <p>Serviço gratuito do Governo Federal que orienta, acolhe e encaminha denúncias de violência contra
+                        a mulher, todos os dias da semana.</p>
                 </div>
 
             </div>
 
-            <div class="projects-note">
-                <strong>Em situação de risco?</strong> Ligue 180 (Central de Atendimento à Mulher) ou 190 (Polícia
-                Militar) a qualquer hora, todos os dias. As ligações são gratuitas e sigilosas.
-            </div>
+            <button class="carousel-btn next" id="btn-next" aria-label="Próximo">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
         </div>
-    </section>
 
-    <div class="quote">
-        <p>"Juntas somos mais fortes."</p>
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M12 20.5C12 20.5 3 15 3 8.9C3 5.6 5.6 3 8.8 3C10.6 3 12 3.9 12 3.9C12 3.9 13.4 3 15.2 3C18.4 3 21 5.6 21 8.9C21 15 12 20.5 12 20.5Z"
-                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-        </svg>
-    </div>
-    <script src="../Scprit/script-home.js"></script>
+        <script src="../Scprit/script-home.js"></script>
+        <script src="../Scprit/script-projetos.js"></script>
 </body>
 
 </html>
